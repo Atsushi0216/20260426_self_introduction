@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add simple reveal animation for hobby items
-    const hobbyItems = document.querySelectorAll('.hobby-item');
+    // Add simple reveal animation for hobby and food items
+    const items = document.querySelectorAll('.hobby-item, .food-item');
     
-    hobbyItems.forEach((item, index) => {
+    items.forEach((item, index) => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(10px)';
         

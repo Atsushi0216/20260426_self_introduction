@@ -180,14 +180,14 @@ h2::after {
     text-align: justify;
 }
 
-.hobby-list {
+.hobby-list, .food-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.hobby-item {
+.hobby-item, .food-item {
     background: white;
     padding: 10px 20px;
     border-radius: 50px;
@@ -200,13 +200,13 @@ h2::after {
     cursor: default;
 }
 
-.hobby-item:hover {
+.hobby-item:hover, .food-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     background: var(--white);
 }
 
-.hobby-item .icon {
+.hobby-item .icon, .food-item .icon {
     font-size: 1.2rem;
 }
 
