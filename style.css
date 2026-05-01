@@ -210,6 +210,56 @@ h2::after {
     font-size: 1.2rem;
 }
 
+.sns-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.sns-link {
+    text-decoration: none;
+    color: var(--text-main);
+    background: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-family: var(--font-en);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.sns-link:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+.sns-link .icon {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.sns-link:hover .icon {
+    transform: rotate(10deg);
+}
+
+.sns-link .text {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+.sns-link.note {
+    border-left: 4px solid #41C9B4; /* Note's brand color green */
+}
+
+.sns-link.x-twitter {
+    border-left: 4px solid #000000; /* X's brand color black */
+}
+
 .profile-footer {
     margin-top: 60px;
     text-align: center;
